@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    max-width: 100%;
+    padding: 0 30px;
+}
+.heading-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 20px;
+
+    .heading-info{
+
+    }
+    i{
+        color: #F75604;
+    }
+    span{
+        color: #fff;
+    }
+}
