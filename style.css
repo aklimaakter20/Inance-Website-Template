@@ -8,6 +8,22 @@
     max-width: 100%;
     padding: 0 30px;
 }
+.btn{
+     padding: 15px 40px;
+     font-size: 16px;
+     text-transform: uppercase;
+     background-color: #0355CC;
+     color: #fff;
+     font-weight: 500;
+     border: 0;
+     transition: 0.5s;
+     
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #0355CC;
+    color: #0355CC;
+}
 .heading-section{
     display: flex;
     align-items: center;
@@ -47,11 +63,15 @@
         li{
             list-style: none;
         }
-        li a{
+         a{
             text-decoration: none;
             margin-left: 40px;
             color: #000;
-            font-size: 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        a:hover{
+            color: #0355CC;
         }
         .active{
             color: #0355CC;
@@ -77,13 +97,14 @@
             margin-bottom: 30px;
         }
         .hero-btn{
-            color: #fff;
             background-color: #FF8A1D;
-            border: 0;
-            padding: 12px 50px;
             border-radius: 6px;
-            font-size: 16px;
-            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        .hero-btn:hover{
+            background-color: transparent;
+            border: 1px solid #FF8A1D;
+            color: #FF8A1D;
         }
     }
 }
@@ -101,6 +122,7 @@
     justify-content: space-between;
     position: absolute;
     bottom: -30%;
+    /* margin-bottom: 10px; */
 
     .card{
         background-color: #fff;
@@ -111,7 +133,9 @@
         flex-direction: column;
         margin-bottom: 140px;
         color: #726dae;
-        transition: 0.3s;
+        transition: 0.5s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
         
         i{
             margin-bottom: 25px;
@@ -129,4 +153,29 @@
     }
 }
 
+}
+/* about-section */
+.about-section{
+    padding-top: 200px;
+
+    .about-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .about-left{
+            flex-basis: 40%;
+            & h2{
+                font-size: 34px;
+                margin-bottom: 25px;
+                text-transform: uppercase;
+            }
+            & p{
+                line-height: 28px;
+                text-align: left;
+                font-size: 15px;
+                margin-bottom: 25px;
+            }
+        }
+    }
 }
